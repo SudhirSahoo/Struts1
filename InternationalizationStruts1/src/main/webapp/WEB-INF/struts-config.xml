@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="userForm" type="com.skumar.struts1.form.UserForm" />
+
+	</form-beans>
+
+	<action-mappings>
+
+		<action path="/LoginPage" type="org.apache.struts.actions.ForwardAction"
+			parameter="/login.jsp" />
+
+		<action path="/Submit" type="com.skumar.struts1.action.LanguageSelectAction"
+			name="userForm" validate="true" parameter="method" input="/pages/login.jsp"
+			scope="session">
+			<forward name="success" path="/welcome.jsp" />
+		</action>
+
+		<action path="/Locale" type="com.skumar.struts1.action.LanguageSelectAction"
+			name="userForm" parameter="method" validate="false" scope="session">
+			<forward name="success" path="/login.jsp" />
+		</action>
+
+	</action-mappings>
+
+	<message-resources parameter="com.skumar.struts1.properties.Common" />
+
+</struts-config>

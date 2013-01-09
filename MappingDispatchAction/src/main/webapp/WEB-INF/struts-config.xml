@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="taskForm" type="com.skumar.struts1.form.TaskForm" />
+	</form-beans>
+
+	<action-mappings>
+		<action path="/ListTaskAction" type="com.skumar.struts1.action.TaskAction"
+			name="taskForm" parameter="showTaskList">
+			<forward name="success" path="/taskList.jsp" />
+		</action>
+
+		<action path="/AddTaskAction" type="com.skumar.struts1.action.TaskAction"
+			name="taskForm" parameter="addTask">
+			<forward name="success" path="/taskList.jsp" />
+		</action>
+
+		<action path="/EditTaskAction" type="com.skumar.struts1.action.TaskAction"
+			name="taskForm" parameter="editTask">
+			<forward name="success" path="/taskList.jsp" />
+		</action>
+
+		<action path="/DeleteTaskAction" type="com.skumar.struts1.action.TaskAction"
+			name="taskForm" parameter="deleteTask">
+			<forward name="success" path="/taskList.jsp" />
+		</action>
+
+	</action-mappings>
+
+</struts-config>

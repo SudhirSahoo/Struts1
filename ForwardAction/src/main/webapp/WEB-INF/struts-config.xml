@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="createTaskForm" type="com.skumar.struts1.form.CreateTaskForm" />
+	</form-beans>
+
+	<action-mappings>
+		<action path="/createTaskLandingPage" type="org.apache.struts.actions.ForwardAction"
+			parameter="/createTask.jsp" />
+			
+		<action path="/createTask" validate="true" input="/createTask.jsp" type="com.skumar.struts1.action.CreateTaskAction"
+			name="createTaskForm">
+			<forward name="success" path="/Success.jsp" />
+		</action>
+	</action-mappings>
+
+	<message-resources parameter="com.skumar.struts1.resources.ApplicationResources" />
+</struts-config>

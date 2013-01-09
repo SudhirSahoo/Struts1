@@ -1,0 +1,244 @@
+@CHARSET "UTF-8";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #FFFFFF;
+}
+
+#mask {
+	position: relative;
+	min-height: 100%;
+	margin-bottom: -25px;
+}
+
+#header {
+	background-image:url('/TMS/img/BannerBg.gif');
+	width: 100%;
+	height: 100px;
+	
+}
+
+body {
+    color: #292929;
+    font-family: 'Segoe UI','Lucida Grande','Lucida Sans','Lucida Sans Unicode','Verdana','Arial';
+    font-size: 62.5%;
+    font-size: 62.5%;
+}
+#content-wrapper {
+	float: left;
+	width: 100%;
+	background: #DDEEFF;
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+}
+
+#leftcol-wrapper {
+	float: left;
+	width: 100%;
+	background: #6699CC;
+	position: relative;
+	right: 80%;
+	min-height: 100%;
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+}
+
+
+#menu {
+	float: left;
+	width: 18%;
+	position: relative;
+	left: 81%;
+	padding-bottom: 25px;
+}
+
+#content {
+	float: left;
+	width: 78%;
+	position: relative;
+	left: 83%;
+	padding-bottom: 25px;
+	overflow: hidden;
+}
+
+#footer {
+	background: #444444;
+	color: #FFFFFF;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	bottom: 0;
+	height: 25px;
+}
+
+#clearfooter {
+	height: 25px;
+	clear: both;
+}
+
+#divSigninWrapper {
+    float: right;
+    position: relative;
+}
+
+.dropDownDIV {
+    background-color: White;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 0 4px 0 #E4E4E4;
+    display: none;
+    margin-top: 11px;
+    padding: 24px;
+    position: absolute;
+    right: 0;
+    z-index: 300;
+}
+
+#header #ulSignin > li:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+#header #ulSignin > li a.top, #header #ulSignin > li span.emptyCart {
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    text-decoration: none
+}
+#header #ulSignin {
+    font-family: museo-1,museo-2,"Segoe UI",Arial,Helvetica,sans-serif;
+
+}
+#header #ulSignin {
+    list-style: none outside none;
+}
+
+#header #ulSignin li.active div.dropDownDIV{
+	display:block;
+	top:38px;
+	border-top:0;
+	margin-top:2px
+}
+
+#header #ulSignin li div.signinPanel {
+    width: 260px;
+}
+
+#divsigninPanelError {
+    color: #C6193D;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#header #ulSignin li div.signinPanel #txtsigninPanelEmail {
+    margin: 3px 0 8px;
+}
+#header #ulSignin li div.signinPanel input[type="text"], #header #ulSignin li div.signinPanel input[type="password"] {
+    border: 1px solid #E0E0E0;
+    color: #8A8A8A;
+    display: block;
+    font-family: "museo-sans-1","museo-sans-2","Segoe UI",Helvetica,sans-serif;
+    font-size: 16px;
+    margin: 3px 0 0;
+    padding: 6px;
+    width: 94%;
+}
+
+#header #ulSignin li div.signinPanel button {
+    margin: 10px 0 5px;
+    width: 100%;
+}
+.button-blue, .button-blue:link, .button-blue:visited {
+    background: url("../images/buttons/btns_new.gif") repeat-x scroll 0 0 #4CB7E1;
+    border: 1px solid #089ED6;
+    border-radius: 7px 7px 7px 7px;
+    color: #FFFFFF;
+    font-family: 'Segoe UI','Lucida Grande','Lucida Sans','Lucida Sans Unicode','Verdana','Arial';
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 15px 5px;
+}
+
+a:link, a:visited {
+    color: #089ED6;
+    text-decoration: none;
+}
+h1, h2, h3, h4, p, ul, ol, li, form, img, fieldset {
+    font-weight: normal;
+}
+#header #ulSignin li div.signinPanel label {
+    font-size: 1.3em;
+    padding-left: 2px;
+}
+
+#menu a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+#menu a:visited, #menu a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.task-section h2 {
+    border-bottom: 1px solid #DCE1E2;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+	text-align: center;
+}
+
+.task-section fieldset {
+    border: 0 none;
+    margin-left: 150px;
+}
+
+.task-section label {
+	top: 8px;
+	position: absolute;
+	margin-left: 20px;
+}
+
+.task-section input, .task-section textarea {
+	width: 185px;
+}
+
+.task-section text {
+	
+}
+
+.task-section .row {
+    position: relative;
+}
+
+.task-section p.tip {
+    clear: both;
+    font-size: 9px;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.task-section em {
+   color: #FF0024;
+    float: left;
+    height: 14px;
+    left: -8px;
+    overflow: hidden;
+    position: absolute;
+    width: 14px;
+}
+
+
